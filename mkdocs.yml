@@ -3,7 +3,7 @@ site_url: https://abby-cyber.github.io/docs/
 
 theme:
   name: material
-  custom_dir: overrides/
+  custom_dir: my-project/overrides/
   features:
     - navigation.tabs
     - navigation.expand
