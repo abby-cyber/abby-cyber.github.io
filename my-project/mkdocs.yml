@@ -3,11 +3,12 @@ site_url: https://abby-cyber.github.io/docs/
 
 theme:
   name: material
-  custom_dir: material
+  custom_dir: overrides/
   features:
     - navigation.tabs
     - navigation.expand
     - navigation.top
+    - content.action.edit
   palette:
     primary: indigo
     accent: indigo
@@ -15,8 +16,13 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+extra:
+  version:
+    provider: mike  
+
 plugins:
   - search
+  - mike
 
 nav:
     - Home: index.md
