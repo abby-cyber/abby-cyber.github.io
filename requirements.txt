@@ -1,0 +1,4 @@
+mkdocs
+mike==1.1.2
+mkdocs-material==9.4.6
+mkdocs-material-extensions
