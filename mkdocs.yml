@@ -1,9 +1,10 @@
 site_name: Abby's first MkDocs site
-site_url: https://abby-cyber.github.io/docs/
+site_url: https://abby-cyber.github.io
+docs_dir: docs
 
 theme:
   name: material
-  custom_dir: my-project/overrides/
+  custom_dir: overrides/
   features:
     - navigation.tabs
     - navigation.expand
