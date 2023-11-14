@@ -1,5 +1,5 @@
 site_name: Abby's first MkDocs site
-site_url: https://abby-cyber.github.io
+site_url: https://abby-cyber.github.io/
 docs_dir: docs
 
 theme:
