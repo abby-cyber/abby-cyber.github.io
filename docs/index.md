@@ -1,7 +1,9 @@
 ---
-template: home.html
-title: Material for MkDocs
-social:
-  cards_layout_options:
-    title: Documentation that simply works
+title: Lorem ipsum dolor sit amet
+description: Nullam urna elit, malesuada eget finibus ut, ac tortor. 
+icon: material/emoticon-happy 
 ---
+
+This is index.md
+
+

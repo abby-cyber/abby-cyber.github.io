@@ -24,6 +24,10 @@ plugins:
   - search
   - mike
 
+markdown_extensions:
+  - meta
+
+
 nav:
     - Home: index.md
     - About: about.md
