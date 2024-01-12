@@ -1,16 +1,20 @@
 name: CI
 
-on:
-  push:
+on: # 触发工作流条件
+  push: # push 事件，从本地master分支push到GitHub时触发
     branches:
       - master  # 你的默认分支名称
 
-jobs:
+  # pull_request: # 在master分支合并别人提交的PR时触发
+  #   branches:
+  #     - master  # 你的默认分支名称
+
+jobs: # 工作流的具体情况
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # 创建一个新的虚拟机，使用最新的ubuntu系统
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # 将代码从GitHub拉取到虚拟机中
 
       - name: Set up Python
         uses: actions/setup-python@v2
