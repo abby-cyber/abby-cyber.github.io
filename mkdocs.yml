@@ -1,0 +1,43 @@
+site_name: Abby's Doc Site Name  # 页签标题
+theme: 
+  name: material                 # material for mkdocs 自定义主题
+  features:
+    - navigation.tabs            # 顶部导航栏的标签页
+#    - navigation.path           # 顶部导航栏的路径，企业版才有
+#    - navigation.sections        # 关闭顶部导航栏的下拉菜单，显示所有页面
+    - navigation.expand          # 展开顶部导航栏的下拉菜单，当navigation.sections开启时不适用
+    - toc.integrate              # 关闭右侧目录，显示在左侧的导航栏中
+    - navigation.top             # back to top 按钮
+    - search.suggest             # 搜索提示
+    - search.highlight           # 搜索结果高亮
+    - content.tabs.link          # Content tabs are linked based on their label, not offset. 
+    - content.code.annotation    # 启用代码注释
+    - content.code.copy          # 启用代码复制按钮
+  language: en 
+  palette:
+    - scheme: default 
+      toggle:
+        icon: material/brightness-4 
+        name: Switch to dark mode
+      primary: teal 
+      accent: purple
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+extra:
+  social: # 底部社交链接，如twitter、github等
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin-in
+
+
+# 在 YAML 中，| 符号用于表示一个字面块标量（literal block scalar）。
+# 这种语法允许你在 YAML 文件中包含多行字符串，而无需使用引号或特殊的转义字符。
+copyright: |  
+  &copy; 2023 <a href="https://github.com/james-willett" target="_blank" rel="noopener">James Willett</a>
