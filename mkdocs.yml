@@ -42,3 +42,12 @@ extra:
 # 这种语法允许你在 YAML 文件中包含多行字符串，而无需使用引号或特殊的转义字符。
 copyright: |  
   &copy; 2023 <a href="https://github.com/james-willett" target="_blank" rel="noopener">James Willett</a>
+
+nav: 
+  - Home: README.md
+  - Page: Page.md
+  - This is folder: 
+      - folder2:
+        - folderpage2: page-folder/folder2/folderpage2.md
+      - folderpage1: page-folder/folderpage1.md
+  - "External Link": https://www.baidu.com
