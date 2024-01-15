@@ -32,6 +32,7 @@ jobs: # 工作流的具体情况
         run: |
           git fetch origin gh-pages --depth=1
           mike deploy v2.0.0 -p 
+          mike set-default v2.0.0 -p
           mike list
 
 # name: ci 
