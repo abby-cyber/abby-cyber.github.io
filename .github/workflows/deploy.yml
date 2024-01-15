@@ -28,9 +28,8 @@ jobs: # 工作流的具体情况
       # - name: Build the MkDocs site
       #   run: mkdocs build
 
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
-
+      - name: Mike Deploy
+        run: mike deploy master -p 
 
 # name: ci 
 # on:
