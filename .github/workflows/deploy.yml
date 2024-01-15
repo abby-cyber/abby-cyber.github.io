@@ -25,9 +25,9 @@ jobs: # 工作流的具体情况
       - name : Deploy Preparations
         run: sh ./prepare.sh
 
-      # - name: Build the MkDocs site
-      #   run: mkdocs build
-
+      - name: Git Config
+        run: git config user.name abby.huang && git config user.email abby.huang@vesoft.com
+        
       - name: Mike Deploy
         run: mike deploy master -p 
 
