@@ -1,38 +1,65 @@
-name: Publish docs via GitHub Pages
+# name: Publish docs via GitHub Pages
 
-on: # 触发工作流条件
-  push: # push 事件，从本地master分支push到GitHub时触发
+# on: # 触发工作流条件
+#   push: # push 事件，从本地master分支push到GitHub时触发
+#     branches:
+#       - master  # 你的默认分支名称
+
+#   # pull_request: # 在master分支合并别人提交的PR时触发
+#   #   branches:
+#   #     - master  # 你的默认分支名称
+
+# jobs: # 工作流的具体情况
+#   deploy:
+#     runs-on: ubuntu-latest # 创建一个新的虚拟机，使用最新的ubuntu系统
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4 # 将代码从GitHub拉取到虚拟机中
+
+#       - name: Set up Python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: '3.8'
+#           architecture: 'x64'
+
+#       - name : Deploy Preparations
+#         run: sh ./prepare.sh
+
+        - name : Deploy Preparations
+          run: sh ./prepare.sh
+
+
+#       # - name: Build the MkDocs site
+#       #   run: mkdocs build
+
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./site
+
+name: ci 
+on:
+  push:
     branches:
-      - master  # 你的默认分支名称
-
-  # pull_request: # 在master分支合并别人提交的PR时触发
-  #   branches:
-  #     - master  # 你的默认分支名称
-
-jobs: # 工作流的具体情况
+      - master 
+      - main
+permissions:
+  contents: write
+jobs:
   deploy:
-    runs-on: ubuntu-latest # 创建一个新的虚拟机，使用最新的ubuntu系统
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4 # 将代码从GitHub拉取到虚拟机中
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
-          architecture: 'x64'
-
-      - name : Deploy Preparations
-        run: sh ./prepare.sh
-
-      - name: Git Config
-        run: git config user.name abbycyber && git config user.email abby.huang@vesoft.com
-
-      # - name: Build the MkDocs site
-      #   run: mkdocs build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
@@ -66,3 +93,4 @@ jobs: # 工作流的具体情况
 #             mkdocs-material-
 #       - run: pip install mkdocs-material 
 #       - run: mkdocs gh-deploy --force
+
