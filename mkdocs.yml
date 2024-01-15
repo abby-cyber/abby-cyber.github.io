@@ -1,5 +1,6 @@
 site_name: Abby's Doc Site Name  # 页签标题
 docs_dir: docs                   # 文档目录
+site_url: https://abby-cyber.github.io/ # 网站地址
 theme: 
   name: material                 # material for mkdocs 自定义主题
   features:
@@ -36,6 +37,10 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
     - icon: fontawesome/brands/linkedin-in
+
+  version: # deploy multiple versions using mike
+    provider: mike
+   
 
 
 # 在 YAML 中，| 符号用于表示一个字面块标量（literal block scalar）。
