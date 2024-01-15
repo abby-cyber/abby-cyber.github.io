@@ -3,6 +3,7 @@ docs_dir: docs                   # 文档目录
 site_url: https://abby-cyber.github.io/ # 网站地址
 theme: 
   name: material                 # material for mkdocs 自定义主题
+  custom_dir: docs/overrides     # 主题目录
   features:
     - navigation.tabs            # 顶部导航栏的标签页
 #    - navigation.path           # 顶部导航栏的路径，企业版才有
