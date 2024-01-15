@@ -3,7 +3,7 @@ name: Publish docs via GitHub Pages
 on: # 触发工作流条件
   push: # push 事件，从本地master分支push到GitHub时触发
     branches:
-      - v1.0.0  # 你的默认分支名称
+      - v2.0.0  # 你的默认分支名称
 
   # pull_request: # 在master分支合并别人提交的PR时触发
   #   branches:
@@ -31,7 +31,7 @@ jobs: # 工作流的具体情况
       - name: Mike Deploy
         run: |
           git fetch origin gh-pages --depth=1
-          mike deploy v1.0.0 -p 
+          mike deploy v2.0.0 -p 
           mike list
 
 # name: ci 
