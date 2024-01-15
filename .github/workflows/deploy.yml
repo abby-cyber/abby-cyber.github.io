@@ -29,10 +29,8 @@ jobs: # 工作流的具体情况
       #   run: mkdocs build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+        run: mkdocs gh-deploy --force
+
 
 # name: ci 
 # on:
