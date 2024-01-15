@@ -2,6 +2,7 @@ site_name: Abby's Doc Site Name  # 页签标题
 docs_dir: docs                   # 文档目录
 theme: 
   name: material                 # material for mkdocs 自定义主题
+  custom_dir: docs/overrides     # 自定义主题的目录
   features:
     - navigation.tabs            # 顶部导航栏的标签页
 #    - navigation.path           # 顶部导航栏的路径，企业版才有
@@ -36,6 +37,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
     - icon: fontawesome/brands/linkedin-in
+  # 使用mike部署版本时，需要配置以下内容，并且需要配置site_url
   version:
     provider: mike
 
