@@ -36,6 +36,8 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
     - icon: fontawesome/brands/linkedin-in
+  version:
+    provider: mike
 
 
 # 在 YAML 中，| 符号用于表示一个字面块标量（literal block scalar）。
