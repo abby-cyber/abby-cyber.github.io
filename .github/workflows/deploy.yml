@@ -30,9 +30,7 @@ jobs: # 工作流的具体情况
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+
 
 # name: ci 
 # on:
