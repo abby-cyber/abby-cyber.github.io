@@ -3,18 +3,21 @@
   max-width: initial;
 }
 
-/* 顶部导航栏公告栏（announce bar）背景色 */
+/* 顶部导航栏公告栏（announce bar）背景色，bar的宽度 */
 
 .md-banner {
   background-color: #f098a7;
+  height: 40px;
 }
 
-/* 顶部导航栏中公告栏的字体类型、颜色、大小 */
+/* 顶部导航栏中公告栏的字体类型、颜色、大小、文字居中 */
 
 .md-banner__inner{
-  font-size: 20px;
-  color: #ffffff;
-  font family: "Arial";
+  font-size: 20px;         /* 字体大小 */
+  color: #ffffff;       /* 字体颜色 */
+  font-family: "Arial";  /* 字体类型 */
+  text-align: center;   /* 使文字水平居中 */
+  line-height: 0.9;    /* 使文字垂直居中 */
 }
 
 /* 黑夜主题色 */

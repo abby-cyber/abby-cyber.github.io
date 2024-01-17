@@ -17,6 +17,7 @@ theme:
     - content.code.annotation    # 启用代码注释
     - content.code.copy          # 启用代码复制按钮
     - announce.dismiss           # 展示可关闭公告的按钮
+    - header.autohide            # 启用自动隐藏顶部导航栏
   language: en 
   palette:
     - scheme: default 
