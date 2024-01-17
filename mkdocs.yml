@@ -18,18 +18,18 @@ theme:
     - content.code.copy          # 启用代码复制按钮
   language: en 
   palette:
-    - scheme: abby 
+    - scheme: default 
       toggle:
         icon: material/brightness-4 
         name: Switch to dark mode
       # 见extra.css自定义主题颜色
-      primary: custom 
+      primary:  grey
       accent: purple
     - scheme: slate 
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
-      primary: custom
+      primary: blue-grey
       accent: lime
 
 extra:
