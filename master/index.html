@@ -1,3 +1,4 @@
+<!-- 自定义导航栏的warning标语 -->
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -44,11 +45,14 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
-      
+  <script>
+    G-377962831
+  </script>
 
-    
     
     
   </head>
@@ -61,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+    <body dir="ltr" data-md-color-scheme="abby" data-md-color-primary="custom" data-md-color-accent="purple">
   
     
     
@@ -73,14 +77,40 @@
     <div data-md-component="skip">
       
         
-        <a href="#doc-homepage" class="md-skip">
+        <a href="#homepage" class="md-skip">
           Skip to content
         </a>
       
     </div>
     <div data-md-component="announce">
       
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  Hey, I'm an announcement.
+
+          </div>
+          
+        </aside>
+      
     </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
     
     
       
@@ -120,7 +150,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="abby" data-md-color-primary="custom" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -130,7 +160,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -527,7 +557,86 @@
                   
 
 
-<h1 id="doc-homepage">Doc homepage</h1>
+<h1 id="homepage">HOMEPAGE</h1>
+<p>Click on a tile to change the primary color:</p>
+<!-- 下面的代码用于改变主题颜色 -->
+
+<div class="mdx-switch">
+  <button data-md-color-primary="red"><code>red</code></button>
+  <button data-md-color-primary="pink"><code>pink</code></button>
+  <button data-md-color-primary="purple"><code>purple</code></button>
+  <button data-md-color-primary="deep-purple"><code>deep purple</code></button>
+  <button data-md-color-primary="indigo"><code>indigo</code></button>
+  <button data-md-color-primary="blue"><code>blue</code></button>
+  <button data-md-color-primary="light-blue"><code>light blue</code></button>
+  <button data-md-color-primary="cyan"><code>cyan</code></button>
+  <button data-md-color-primary="teal"><code>teal</code></button>
+  <button data-md-color-primary="green"><code>green</code></button>
+  <button data-md-color-primary="light-green"><code>light green</code></button>
+  <button data-md-color-primary="lime"><code>lime</code></button>
+  <button data-md-color-primary="yellow"><code>yellow</code></button>
+  <button data-md-color-primary="amber"><code>amber</code></button>
+  <button data-md-color-primary="orange"><code>orange</code></button>
+  <button data-md-color-primary="deep-orange"><code>deep orange</code></button>
+  <button data-md-color-primary="brown"><code>brown</code></button>
+  <button data-md-color-primary="grey"><code>grey</code></button>
+  <button data-md-color-primary="blue-grey"><code>blue grey</code></button>
+  <button data-md-color-primary="black"><code>black</code></button>
+  <button data-md-color-primary="white"><code>white</code></button>
+</div>
+
+<script>
+  var colorMap = {
+    "red": {background: "#F44336", text: "#FFFFFF"},
+    "pink": {background: "#FFC0CB", text: "#FFFFFF"},
+    "purple": {background: "#9C27B0", text: "#FFFFFF"},
+    "deep-purple": {background: "#673AB7", text: "#FFFFFF"},
+    "indigo": {background: "#3F51B5", text: "#FFFFFF"},
+    "blue": {background: "#2196F3", text: "#FFFFFF"},
+    "light-blue": {background: "#03A9F4", text: "#FFFFFF"},
+    "cyan": {background: "#00BCD4", text: "#FFFFFF"},
+    "teal": {background: "#009688", text: "#FFFFFF"},
+    "green": {background: "#4CAF50", text: "#FFFFFF"},
+    "light-green": {background: "#8BC34A", text: "#FFFFFF"},
+    "lime": {background: "#CDDC39", text: "#000000"},
+    "yellow": {background: "#FFEB3B", text: "#000000"},
+    "amber": {background: "#FFC107", text: "#000000"},
+    "orange": {background: "#FF9800", text: "#000000"},
+    "deep-orange": {background: "#FF5722", text: "#FFFFFF"},
+    "brown": {background: "#795548", text: "#FFFFFF"},
+    "grey": {background: "#9E9E9F", text: "#FFFFFF"},
+    "blue-grey": {background: "#607D8B", text: "#FFFFFF"},
+    "black": {background: "#000000", text: "#FFFFFF"},
+    "white": {background: "#FFFFE", text: "#000000"},
+    // 你可以在这里添加更多颜色
+  };
+
+  var buttons = document.querySelectorAll("button[data-md-color-primary]")
+  buttons.forEach(function(button) {
+    var color = button.getAttribute("data-md-color-primary");
+    // 如果颜色在 colorMap 中，使用 colorMap 中的值
+    var backgroundColor = colorMap[color] ? colorMap[color].background : color;
+    var textColor = colorMap[color] ? colorMap[color].text : "#000000";
+    var codeElement = button.querySelector("code");
+    codeElement.style.backgroundColor = backgroundColor;
+    codeElement.style.color = textColor;
+
+    button.addEventListener("click", function() {
+      document.body.setAttribute("data-md-color-primary", color)
+      var name = document.querySelector("#__code_1 code span.l")
+      name.textContent = color.replace("-", " ")
+
+      buttons.forEach(function(btn) {
+        var codeElement = btn.querySelector("code");
+        codeElement.style.backgroundColor = "initial";
+        codeElement.style.color = "initial";
+      });
+
+      codeElement.style.backgroundColor = backgroundColor;
+      codeElement.style.color = textColor;
+    })
+  })
+</script>
 
 
 
@@ -613,7 +722,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.expand", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.expand", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="assets/javascripts/bundle.aecac24b.min.js"></script>
