@@ -2,6 +2,7 @@ site_name: Abby's Doc Site Name  # 页签标题
 docs_dir: docs                   # 文档目录
 theme: 
   name: material                 # material for mkdocs 自定义主题
+  custom_dir: docs/overrides     # 自定义主题的目录
   features:
     - navigation.tabs            # 顶部导航栏的标签页
 #    - navigation.path           # 顶部导航栏的路径，企业版才有
@@ -16,17 +17,18 @@ theme:
     - content.code.copy          # 启用代码复制按钮
   language: en 
   palette:
-    - scheme: default 
+    - scheme: abby 
       toggle:
         icon: material/brightness-4 
         name: Switch to dark mode
-      primary: teal 
+      # 见extra.css自定义主题颜色
+      primary: custom 
       accent: purple
     - scheme: slate 
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
-      primary: teal
+      primary: custom
       accent: lime
 
 extra:
@@ -36,7 +38,12 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
     - icon: fontawesome/brands/linkedin-in
-
+  # 使用mike部署版本时，需要配置以下内容，并且需要配置site_url
+  version:
+    provider: mike
+   
+extra_css:
+  - stylesheets/extra.css
 
 # 在 YAML 中，| 符号用于表示一个字面块标量（literal block scalar）。
 # 这种语法允许你在 YAML 文件中包含多行字符串，而无需使用引号或特殊的转义字符。
