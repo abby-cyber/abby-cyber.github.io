@@ -80,3 +80,8 @@ Click on a tile to change the primary color:
     })
   })
 </script>
+
+
+## Links
+
+[I'm a link](Page.md#im_a_link)

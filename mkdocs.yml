@@ -18,6 +18,8 @@ theme:
     - content.code.copy          # 启用代码复制按钮
     - announce.dismiss           # 展示可关闭公告的按钮
     - header.autohide            # 启用自动隐藏顶部导航栏
+    - navigation.instant         # 启用即时加载功能
+    - navigation.tracking        # 启用锚点跟踪功能
   language: en 
   palette:
     - scheme: default 
