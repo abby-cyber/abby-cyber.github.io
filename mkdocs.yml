@@ -7,9 +7,10 @@ theme:
   features:
     - navigation.tabs            # 顶部导航栏的标签页
 #    - navigation.path           # 顶部导航栏的路径，企业版才有
-#    - navigation.sections        # 关闭顶部导航栏的下拉菜单，显示所有页面
-    - navigation.expand          # 展开顶部导航栏的下拉菜单，当navigation.sections开启时不适用
-    - toc.integrate              # 关闭右侧目录，显示在左侧的导航栏中
+#    - navigation.sections        # 关闭左侧目录的下拉菜单，显示所有子目录页面，否则折叠显示
+#    - navigation.index          # 将目录下拉菜单中的index.md页面显示在左侧导航栏中，不能与toc.integrate同时使用
+    - navigation.expand          # 展开左侧目录下拉菜单中所有名称，当navigation.sections开启时不适用
+#    - toc.integrate              # 关闭单篇文档的目录section名称显示在右侧的导航栏中，集成至左侧目录中    # - toc.follow               # 启用侧边目录跟踪功能
     - navigation.top             # back to top 按钮
     - search.suggest             # 搜索提示
     - search.highlight           # 搜索结果高亮
