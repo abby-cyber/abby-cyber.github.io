@@ -33,10 +33,26 @@ jobs: # 工作流的具体情况
       - name: Mike Deploy
         run: |
           git fetch origin gh-pages-zh --depth=1 # 执行mike deploy时，必须先执行此命令
-          mike deploy master --config-file zh/mkdocs.yml -b gh-pages-zh -p --rebase
+          mike deploy master --config-file zh/mkdocs.yml --branch gh-pages-zh -p --rebase
           # # 必须设置默认版本。
-          # mike set-default master --config-file zh/mkdocs.yml -b gh-pages-zh -p 
+          # mike set-default master --config-file zh/mkdocs.yml --branch gh-pages-zh -p 
           mike list 
+
+
+
+# `mike` 是一个用于管理 `mkdocs` 版本的工具。当你运行 `mike deploy` 命令时，`mike` 会执行以下步骤：
+
+# 1. **生成文档**：`mike` 首先会调用 `mkdocs build` 命令来生成文档。这个命令会读取你的 `mkdocs.yml` 配置文件和 Markdown 文件，然后生成一个包含 HTML、CSS 和 JavaScript 文件的站点。
+
+# 2. **创建或更新版本分支**：`mike` 会创建或更新一个特定的版本分支。这个分支的名字通常是 `gh-pages`，但你可以通过 `--branch` 选项来改变它。这个分支会包含你所有版本的文档。
+
+# 3. **复制文档**：`mike` 会将生成的文档复制到这个版本分支的一个子目录中。子目录的名字就是你在 `mike deploy` 命令中指定的版本号。
+
+# 4. **更新版本清单**：`mike` 会更新一个 JSON 文件，这个文件包含了你所有版本的列表。这个文件用于生成版本选择器，让用户可以在不同版本的文档之间切换。
+
+# 5. **提交和推送**：最后，`mike` 会提交这些更改，并将它们推送到远程仓库。
+
+# 以上就是 `mike deploy` 命令的基本工作流程。这个命令的目标是让你可以轻松地管理和部署多个版本的 `mkdocs` 文档。
 
 # name: ci 
 # on:
