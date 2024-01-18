@@ -4,6 +4,8 @@ on: # 触发工作流条件
   push: # push 事件，从本地master分支push到GitHub时触发
     branches:
       - master  # 你的默认分支名称
+    paths:
+      - 'en/**' # 触发工作流的路径，这里是en目录下的所有文件
 
   # pull_request: # 在master分支合并别人提交的PR时触发
   #   branches:
@@ -32,9 +34,10 @@ jobs: # 工作流的具体情况
         run: |
           git fetch origin gh-pages --depth=1 # 执行mike deploy时，必须先执行此命令
           git checkout gh-pages-zh && git pull origin gh-pages-zh && git checkout master
-          mike deploy master --config-file $GITHUB_WORKSPACE/en/mkdocs.yml --branch gh-pages -p
+          cd en
+          mike deploy master --config-file mkdocs.yml --branch gh-pages -p
           # # 必须设置默认版本。
-          # mike set-default master --config-file $GITHUB_WORKSPACE/en/mkdocs.yml  --branch gh-pages -p 
+          # mike set-default master --config-file mkdocs.yml  --branch gh-pages -p 
           mike list
 
 # name: ci 
