@@ -1,0 +1,22 @@
+<!-- 自定义导航栏的warning标语 -->
+{% extends "base.html" %}
+
+<!-- outdated的样式，预览不显示 -->
+{% block outdated %}
+  您阅读的版本不是最新版本。
+  <a href="{{ '../' ~ base_url }}"> 
+    <strong>点击此处前往最新版</strong>
+  </a>
+{% endblock %}
+
+<!-- 设置顶部导航栏announcement -->
+{% block announce %}
+  请注意！这是个公告。
+{% endblock %}
+
+
+{% block analytics %}
+  <script>
+    G-377962831
+  </script>
+{% endblock %}
