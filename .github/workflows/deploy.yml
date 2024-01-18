@@ -35,7 +35,7 @@ jobs: # 工作流的具体情况
           git fetch origin gh-pages --depth=1 # 执行mike deploy时，必须先执行此命令
           git checkout gh-pages-zh && git pull origin gh-pages-zh && git checkout master
           cd en
-          mike deploy master --config-file mkdocs.yml --branch gh-pages -p --ignore-remote-status
+          mike deploy master --config-file mkdocs.yml --branch gh-pages -p
           # # 必须设置默认版本。
           # mike set-default master --config-file mkdocs.yml  --branch gh-pages -p 
           mike list
