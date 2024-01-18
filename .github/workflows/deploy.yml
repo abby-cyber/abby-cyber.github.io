@@ -34,9 +34,9 @@ jobs: # 工作流的具体情况
         run: |
           git fetch origin gh-pages --depth=1 # 执行mike deploy时，必须先执行此命令
           git checkout gh-pages && git pull origin gh-pages
-          mike deploy master --config-file /Users/huangfengxian/abby-cyber.github.io/en/mkdocs.yml --branch gh-pages -p 
+          mike deploy master --config-file en/mkdocs.yml --branch gh-pages -p --ignore-remote-status
           # # 必须设置默认版本。
-          # mike set-default master --config-file /Users/huangfengxian/abby-cyber.github.io/en/mkdocs.yml --branch gh-pages -p 
+          # mike set-default master --config-file en/mkdocs.yml --branch gh-pages -p 
           mike list
 
 # name: ci 
