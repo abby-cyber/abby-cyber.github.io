@@ -1,6 +1,6 @@
 site_name: Abby's Doc Site Name  # 页签标题
 docs_dir: docs                   # 文档目录
-site_url: https://abby-cyber.github.io/ # 部署多个版本时，需要配置
+site_url: https://abby-cyber.github.io/en # 部署多个版本时，需要配置
 theme: 
   name: material                 # material for mkdocs 自定义主题
   custom_dir: docs/overrides     # 自定义主题的目录
@@ -57,10 +57,10 @@ extra:
   alternate:
     - name: English
       lang: en   # 与language对应
-      link: https://abby-cyber.github.io/master  # 与site_url对应
+      link: https://abby-cyber.github.io/en  # 与site_url对应
     - name: 简体中文
       lang: zh   
-      link: https://abby-cyber.github.io/master
+      link: https://abby-cyber.github.io/zh
    
 extra_css:
   - stylesheets/extra.css
