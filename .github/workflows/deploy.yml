@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: Publish English docs via GitHub Pages
 
 on: # 触发工作流条件
   push: # push 事件，从本地master分支push到GitHub时触发
