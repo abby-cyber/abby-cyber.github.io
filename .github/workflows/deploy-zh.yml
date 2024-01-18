@@ -4,8 +4,8 @@ on: # 触发工作流条件
   push: # push 事件，从本地master分支push到GitHub时触发
     branches:
       - master  # 你的默认分支名称
-    paths:
-      - 'zh/**' # 触发工作流的路径，这里是zh目录下的文件发生变化时触发
+    # paths:
+    #   - 'zh/**' # 触发工作流的路径，这里是zh目录下的文件发生变化时触发
 
   # pull_request: # 在master分支合并别人提交的PR时触发
   #   branches:
