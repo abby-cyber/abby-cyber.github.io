@@ -57,10 +57,10 @@ extra:
   alternate:
     - name: English
       lang: en   # 与language对应
-      link: https://abby-cyber.github.io/  # 与site_url对应
+      link: https://abby-cyber.github.io/master  # 与site_url对应
     - name: 简体中文
       lang: zh   
-      link: https://abby-cyber.github.io/
+      link: https://abby-cyber.github.io/master
    
 extra_css:
   - stylesheets/extra.css
