@@ -5,7 +5,7 @@ on: # 触发工作流条件
     branches:
       - master  # 你的默认分支名称
     path:
-      - 'en/docs/*'
+      - 'en/*'
 
   # pull_request: # 在master分支合并别人提交的PR时触发
   #   branches:
@@ -29,13 +29,13 @@ jobs: # 工作流的具体情况
 
       - name: Git Config
         run: git config user.name abby.huang && git config user.email abby.huang@vesoft.com
-        
+
       - name: Mike Deploy
         run: |
           git fetch origin gh-pages --depth=1 # 执行mike deploy时，必须先执行此命令
-          mike deploy master -p 
+          mike deploy master -f ./en/mkdocs.yml -p 
           # # 必须设置默认版本。
-          # mike set-default master -p 
+          # mike set-default master ./en/mkdocs.yml -p 
           mike list
 
 # name: ci 
