@@ -34,11 +34,11 @@ jobs: # 工作流的具体情况
       - name: Mike Deploy
         run: |
           git fetch origin gh-pages-zh --depth=1 # 执行mike deploy时，必须先执行此命令
-          git checkout gh-pages-zh && git pull origin gh-pages-zh && git checkout master
+          # git checkout gh-pages-zh && git pull origin gh-pages-zh && git checkout master
           pwd
           ls -al
           cd zh
-          mike deploy master --config-file mkdocs-zh.yml --branch gh-pages-zh -p
+          mike deploy master --config-file mkdocs-zh.yml --branch gh-pages-zh -p --ignore-remote-status
           # # 必须设置默认版本。
           # mike set-default master --config-file mkdocs-zh.yml --branch gh-pages-zh -p 
           mike list 
