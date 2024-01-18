@@ -38,9 +38,9 @@ jobs: # 工作流的具体情况
           pwd
           ls -al
           cd zh
-          mike deploy master --config-file mkdocs-zh.yml --branch gh-pages-zh -p
+          mike deploy master --config-file mkdocs.yml --branch gh-pages-zh -p
           # # 必须设置默认版本。
-          # mike set-default master --config-file mkdocs-zh.yml --branch gh-pages-zh -p 
+          # mike set-default master --config-file mkdocs.yml --branch gh-pages-zh -p 
           mike list 
 
 
