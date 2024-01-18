@@ -17,6 +17,8 @@ jobs: # 工作流的具体情况
     steps:
       - name: Checkout
         uses: actions/checkout@v4 # 将代码从GitHub拉取到虚拟机中
+        with:
+          path: source/abby # 指定拉取至虚拟机的路径
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -30,19 +32,13 @@ jobs: # 工作流的具体情况
       - name: Git Config
         run: git config user.name abby.huang && git config user.email abby.huang@vesoft.com
 
-      - name: Set environment variable
-        run: echo "MKDOCS_FILE=$PWD/en/mkdocs.yml" >> $GITHUB_ENV
-  
-      - name: Use environment variable
-        run: echo $MKDOCS_FILE
-
       - name: Mike Deploy
         run: |
           git fetch origin gh-pages --depth=1 # 执行mike deploy时，必须先执行此命令
           git checkout gh-pages && git pull origin gh-pages
-          mike deploy master --config-file $MKDOCS_FILE --branch gh-pages -p
+          mike deploy master --config-file source/abby/en/mkdocs.yml --branch gh-pages -p
           # # 必须设置默认版本。
-          # mike set-default master --config-file $MKDOCS_FILE --branch gh-pages -p 
+          # mike set-default master --config-file source/abby/en/mkdocs.yml  --branch gh-pages -p 
           mike list
 
 # name: ci 
