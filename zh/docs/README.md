@@ -1,4 +1,4 @@
-# HOMEPAGE
+# 主页
 
 Click on a tile to change the primary color:
 
@@ -85,3 +85,9 @@ Click on a tile to change the primary color:
 ## Links
 
 [I'm a link](Page.md#im_a_link)
+
+## I’m a code block
+
+```sql
+SELECT * FROM table WHERE id = 1;
+```

@@ -1,0 +1,80 @@
+site_name: Abby的文档中心  # 页签标题
+docs_dir: docs                   # 文档目录
+site_url: https://abby-cyber.github.io/ # 部署多个版本时，需要配置
+theme: 
+  name: material                 # material for mkdocs 自定义主题
+  custom_dir: docs/overrides     # 自定义主题的目录
+  features:
+    - navigation.tabs            # 顶部导航栏的标签页
+#    - navigation.path           # 顶部导航栏的路径，企业版才有
+#    - navigation.sections        # 关闭左侧目录的下拉菜单，显示所有子目录页面，否则折叠显示
+#    - navigation.index          # 将目录下拉菜单中的index.md页面显示在左侧导航栏中，不能与toc.integrate同时使用
+    - navigation.expand          # 展开左侧目录下拉菜单中所有名称，当navigation.sections开启时不适用
+#    - toc.integrate              # 关闭单篇文档的目录section名称显示在右侧的导航栏中，集成至左侧目录中    # - toc.follow               # 启用侧边目录跟踪功能
+    - navigation.top             # back to top 按钮
+    - search.suggest             # 搜索提示
+    - search.highlight           # 搜索结果高亮
+    - content.tabs.link          # Content tabs are linked based on their label, not offset. 
+    - content.code.annotation    # 启用代码注释
+    - content.code.copy          # 启用代码复制按钮
+    - announce.dismiss           # 展示可关闭公告的按钮
+    - header.autohide            # 启用自动隐藏顶部导航栏
+    - navigation.instant         # 启用即时加载功能
+    - navigation.tracking        # 启用锚点跟踪功能
+  font:  # 设置字体
+    text: 
+      name: Roboto
+    code: 
+      name: Roboto Mono
+  
+  language: zh  # 全局显示语言
+  palette:
+    - scheme: default 
+      toggle:
+        icon: material/brightness-4 
+        name: Switch to dark mode
+      # 见extra.css自定义主题颜色
+      primary:  grey
+      accent: purple
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+      primary: blue-grey
+      accent: lime
+
+extra:
+  social: # 底部社交链接，如twitter、github等
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin-in
+  # 使用mike部署版本时，需要配置以下内容，并且需要配置site_url
+  version:
+    provider: mike
+  # 以下内容用于多语言版本
+  alternate:
+    - name: English
+      lang: en   # 与language对应
+      link: https://abby-cyber.github.io/  # 与site_url对应
+    - name: 简体中文
+      lang: zh   
+      link: https://abby-cyber.github.io/
+
+extra_css:
+  - stylesheets/extra.css
+
+# 在 YAML 中，| 符号用于表示一个字面块标量（literal block scalar）。
+# 这种语法允许你在 YAML 文件中包含多行字符串，而无需使用引号或特殊的转义字符。
+copyright: |  
+  &copy; 2023 <a href="https://github.com/james-willett" target="_blank" rel="noopener">James Willett</a>
+
+nav: 
+  - 主页: README.md
+  - 这是页面: Page.md
+  - 这是文件夹: 
+      - 这是子文件夹:
+        - 这是文件夹页面: page-folder/folder2/folderpage2.md
+      - 这是子文件夹2: page-folder/folderpage1.md
+  - "百度": https://www.baidu.com

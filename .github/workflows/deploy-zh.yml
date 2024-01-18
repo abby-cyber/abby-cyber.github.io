@@ -5,7 +5,7 @@ on: # 触发工作流条件
     branches:
       - master  # 你的默认分支名称
     path:
-      - 'en/docs/*'
+      - 'zh/docs/*'
 
   # pull_request: # 在master分支合并别人提交的PR时触发
   #   branches:
