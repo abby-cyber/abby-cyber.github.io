@@ -43,6 +43,12 @@ theme:
       primary: blue-grey
       accent: lime
 
+markdown_extensions:
+  - codehilite
+  - admonition
+  - toc:
+        permalink: true
+        
 extra:
   social: # 底部社交链接，如twitter、github等
     - icon: fontawesome/brands/github-alt
