@@ -1,0 +1,17 @@
+name: deploy-all
+
+on:
+  push:
+    paths-ignore:
+      - 'en/**'
+      - 'zh/**'
+    branches:
+    # Remember to add v before the following version number unless the version is master.
+      - master
+
+jobs:
+  deploy-zh:
+    uses: ./.github/workflows/deploy-zh.yml
+      
+  deploy-en:
+    uses: ./.github/workflows/deploy.yml

@@ -26,7 +26,7 @@ theme:
     text: 
       name: Roboto
     code: 
-      name: Roboto Mono
+      name: Source Code Pro
   
   language: zh  # 全局显示语言
   palette:
