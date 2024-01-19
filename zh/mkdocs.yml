@@ -1,7 +1,7 @@
 site_name: Abby的文档中心  # 页签标题
 docs_dir: docs                   # 文档目录
 site_url: https://abby-cyber.github.io/ # 部署多个版本时，需要配置
-site_dir: zh
+site_dir: zh # site build后的目录
 theme: 
   name: material                 # material for mkdocs 自定义主题
   custom_dir: docs/overrides     # 自定义主题的目录
