@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#this-is-folder-page-1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -524,6 +529,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -583,6 +590,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -597,9 +606,15 @@
                   
 
 
-  <h1>folderpage1</h1>
+<h1 id="this-is-folder-page-1">This is folder page 1<a class="headerlink" href="#this-is-folder-page-1" title="Permanent link">&para;</a></h1>
+<p><link rel="stylesheet" href="../stylesheets/railroad-diagram.css"></p>
+<div class="highlight"><pre><span></span><code>AlterDatabaseStmt <span class="o">::=</span>
+    &#39;ALTER&#39; &#39;DATABASE&#39; DBName? DatabaseOptionList
 
-
+DatabaseOption <span class="o">::=</span>
+    DefaultKwdOpt ( CharsetKw &#39;=&#39;? CharsetName | &#39;COLLATE&#39; &#39;=&#39;? CollationName | &#39;ENCRYPTION&#39; &#39;=&#39;? EncryptionOpt )    
+</code></pre></div>
+<div id="railroad-diagram-output"></div>
 
 
 
