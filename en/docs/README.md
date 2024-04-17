@@ -1,5 +1,7 @@
 # HOMEPAGE
 
+<link rel="stylesheet" href="./bnf2svg/railroad-diagram.css">
+
 Click on a tile to change the primary color:
 
 <!-- 下面的代码用于改变主题颜色 -->
@@ -91,3 +93,15 @@ Click on a tile to change the primary color:
 ```sql
 SELECT * FROM table WHERE id = 1;
 ```
+
+## I'm a diagram
+
+```bnf
+AdminStmt ::=
+    'ADMIN' ( 'SHOW' ( 'DDL' ( 'JOBS' Int64Num? WhereClauseOptional | 'JOB' 'QUERIES' NumList )? | TableName 'NEXT_ROW_ID' | 'SLOW' AdminShowSlow ) | 'CHECK' ( 'TABLE' TableNameList | 'INDEX' TableName Identifier ( HandleRange ( ',' HandleRange )* )? ) | 'RECOVER' 'INDEX' TableName Identifier | 'CLEANUP' ( 'INDEX' TableName Identifier | 'TABLE' 'LOCK' TableNameList ) | 'CHECKSUM' 'TABLE' TableNameList | 'CANCEL' 'DDL' 'JOBS' NumList | 'RELOAD' ( 'EXPR_PUSHDOWN_BLACKLIST' | 'OPT_RULE_BLACKLIST' | 'BINDINGS' ) | 'PLUGINS' ( 'ENABLE' | 'DISABLE' ) PluginNameList | 'REPAIR' 'TABLE' TableName CreateTableStmt | ( 'FLUSH' | 'CAPTURE' | 'EVOLVE' ) 'BINDINGS' )
+
+TableNameList ::=
+    TableName ( ',' TableName )*
+```
+
+<div id="railroad-diagram-output"></div>
