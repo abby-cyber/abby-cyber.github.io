@@ -1,7 +1,7 @@
 # BNF2SVG
 
 <!-- 重点1·这行引用了外部样式，一定要记得加，否则无法达到需要的显示效果 -->
-<link rel="stylesheet" href="./railroad-diagram.css">
+<link rel="stylesheet" href="../docs/stylesheets/railroad-diagram.css">
 
 **Input:**
 
