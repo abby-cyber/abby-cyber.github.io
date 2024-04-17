@@ -49,6 +49,9 @@ markdown_extensions:
   - admonition
   - toc:
         permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra:
   social: # 底部社交链接，如twitter、github等
