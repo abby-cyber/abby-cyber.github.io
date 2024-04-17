@@ -24,9 +24,9 @@ jobs: # 工作流的具体情况
         with:
           node-version: 20.x  # 安装Node.js 20.x版本
 
-      - name: Install npm dependencies in en/bnf2svg
+      - name: Install npm dependencies in en/docs/bnf2svg
         run: |                 # 安装npm依赖
-          cd en/bnf2svg
+          cd en/docs/bnf2svg
           npm install          
 
       - name: Set up Python
@@ -40,7 +40,7 @@ jobs: # 工作流的具体情况
 
       - name: Run bnf2svg.js script
         run: |
-          cd en/bnf2svg
+          cd en/docs/bnf2svg
           node bnf2svg.js
 
       - name: Git Config
