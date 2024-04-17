@@ -6,6 +6,24 @@ hide:
 
 # Page 
 
+<link rel="stylesheet" href="./stylesheets/railroad-diagram.css">
+
+## Syntax
+
+=== "diagram"
+
+    <div id="railroad-diagram-output"></div>
+
+=== "source"
+
+    ```bnf
+    AlterDatabaseStmt ::=
+        'ALTER' 'DATABASE' DBName? DatabaseOptionList
+
+    DatabaseOption ::=
+        DefaultKwdOpt ( CharsetKw '='? CharsetName | 'COLLATE' '='? CollationName | 'ENCRYPTION' '='? EncryptionOpt )    
+    ```
+
 ## Subtitle
 
 back to top button test
