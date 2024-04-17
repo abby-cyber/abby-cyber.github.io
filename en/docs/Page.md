@@ -6,6 +6,8 @@ hide:
 
 # Page 
 
+<link rel="stylesheet" href="../bnf2svg/railroad-diagram.css">
+
 === "source"
     ```bnf
     AlterDatabaseStmt ::=
@@ -15,7 +17,6 @@ hide:
         DefaultKwdOpt ( CharsetKw '='? CharsetName | 'COLLATE' '='? CollationName | 'ENCRYPTION' '='? EncryptionOpt )    
     ```
 === "diagram"
-
     <div id="railroad-diagram-output"></div>
 
 ## Subtitle
