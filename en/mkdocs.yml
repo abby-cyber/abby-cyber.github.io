@@ -71,7 +71,7 @@ extra:
    
 extra_css:
   - stylesheets/extra.css
-  - bnf2svg/railroad-diagrams.css
+  - stylesheets/railroad-diagrams.css
 
 # 在 YAML 中，| 符号用于表示一个字面块标量（literal block scalar）。
 # 这种语法允许你在 YAML 文件中包含多行字符串，而无需使用引号或特殊的转义字符。
