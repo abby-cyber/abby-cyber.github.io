@@ -14,9 +14,20 @@ on: # 触发工作流条件
 jobs: # 工作流的具体情况
   deploy:
     runs-on: ubuntu-latest # 创建一个新的虚拟机，使用最新的ubuntu系统
-    steps:
+    steps:  
+
       - name: Checkout
         uses: actions/checkout@v4 # 将代码从GitHub拉取到虚拟机中
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x  # 安装Node.js 20.x版本
+
+      - name: Install npm dependencies in en/bnf2svg
+        run: |                 # 安装npm依赖
+          cd en/bnf2svg
+          npm install          
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -26,6 +37,11 @@ jobs: # 工作流的具体情况
 
       - name : Deploy Preparations
         run: sh ./prepare.sh
+
+      - name: Run bnf2svg.js script
+        run: |
+          cd en/bnf2svg
+          node bnf2svg.js
 
       - name: Git Config
         run: git config user.name abby.huang && git config user.email abby.huang@vesoft.com
