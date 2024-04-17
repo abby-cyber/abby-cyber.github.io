@@ -1,6 +1,6 @@
 # HOMEPAGE
 
-<link rel="stylesheet" href="./bnf2svg/railroad-diagram.css">
+<link rel="stylesheet" href="../bnf2svg/railroad-diagram.css">
 
 Click on a tile to change the primary color:
 

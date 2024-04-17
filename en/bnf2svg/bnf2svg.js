@@ -3,7 +3,7 @@ const path = require('path');
 const render = require('./render');
 
 // 要遍历的目录
-const dirPath = '../';
+const dirPath = '../docs';
 
 // 遍历目录
 fs.readdirSync(dirPath).forEach(file => {
