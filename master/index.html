@@ -769,17 +769,15 @@
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <p><a href="Page/#im_a_link">I'm a link</a></p>
 <h2 id="im-a-code-block">I’m a code block<a class="headerlink" href="#im-a-code-block" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="im-a-diagram">I'm a diagram<a class="headerlink" href="#im-a-diagram" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>AdminStmt <span class="o">::=</span>
+<div class="highlight"><pre><span></span><code>AdminStmt <span class="o">::=</span>
     &#39;ADMIN&#39; ( &#39;SHOW&#39; ( &#39;DDL&#39; ( &#39;JOBS&#39; Int64Num? WhereClauseOptional | &#39;JOB&#39; &#39;QUERIES&#39; NumList )? | TableName &#39;NEXT_ROW_ID&#39; | &#39;SLOW&#39; AdminShowSlow ) | &#39;CHECK&#39; ( &#39;TABLE&#39; TableNameList | &#39;INDEX&#39; TableName Identifier ( HandleRange ( &#39;,&#39; HandleRange )* )? ) | &#39;RECOVER&#39; &#39;INDEX&#39; TableName Identifier | &#39;CLEANUP&#39; ( &#39;INDEX&#39; TableName Identifier | &#39;TABLE&#39; &#39;LOCK&#39; TableNameList ) | &#39;CHECKSUM&#39; &#39;TABLE&#39; TableNameList | &#39;CANCEL&#39; &#39;DDL&#39; &#39;JOBS&#39; NumList | &#39;RELOAD&#39; ( &#39;EXPR_PUSHDOWN_BLACKLIST&#39; | &#39;OPT_RULE_BLACKLIST&#39; | &#39;BINDINGS&#39; ) | &#39;PLUGINS&#39; ( &#39;ENABLE&#39; | &#39;DISABLE&#39; ) PluginNameList | &#39;REPAIR&#39; &#39;TABLE&#39; TableName CreateTableStmt | ( &#39;FLUSH&#39; | &#39;CAPTURE&#39; | &#39;EVOLVE&#39; ) &#39;BINDINGS&#39; )
 
 TableNameList <span class="o">::=</span>
     TableName ( &#39;,&#39; TableName )*
 </code></pre></div>
-
 <div id="railroad-diagram-output">
 
   <dt>AdminStmt</dt><dd><svg class="railroad-diagram" width="733" height="652" viewBox="0 0 733 652">
