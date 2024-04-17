@@ -6,6 +6,18 @@ hide:
 
 # Page 
 
+=== "source"
+    ```bnf
+    AlterDatabaseStmt ::=
+        'ALTER' 'DATABASE' DBName? DatabaseOptionList
+
+    DatabaseOption ::=
+        DefaultKwdOpt ( CharsetKw '='? CharsetName | 'COLLATE' '='? CollationName | 'ENCRYPTION' '='? EncryptionOpt )    
+    ```
+=== "diagram"
+
+    <div id="railroad-diagram-output"></div>
+
 ## Subtitle
 
 back to top button test
