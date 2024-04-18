@@ -1,6 +1,6 @@
 # This is folder page 1
 
-<link rel="stylesheet" href="../../stylesheets/railroad-diagram.css">
+<link rel="stylesheet" href="https://docs-cdn.nebula-graph.com.cn/css/railroad-diagram.css">
 
 
 ```bnf
