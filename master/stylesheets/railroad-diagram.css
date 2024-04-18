@@ -1,56 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif
-}
-
-#output dt {
-  font-style: italic;
-  font-weight: 600;
-  margin: 16px 0 0;
-  padding: 0
-}
-
-#railroad-diagram-output dt:first-child {
+.railroad-diagram-output dt:first-child {
   margin-top: 0
 }
 
-#railroad-diagram-output dt:after {
+.railroad-diagram-output dt:after {
   font-weight: 400;
   content: " ::="
 }
 
-#railroad-diagram-output dd {
+.railroad-diagram-output dd {
   margin: 0 0 16px;
   padding: 0 16px;
   overflow-x: auto;
   overflow-y: hidden
 }
 
-#railroad-diagram-output path {
+.railroad-diagram-output path {
   fill: none;
   stroke-width: 1;
   stroke: #0e2336
 }
 
-#railroad-diagram-output text {
+.railroad-diagram-output text {
   font: 10px Verdana, sans-serif;
   text-anchor: middle
 }
 
-#railroad-diagram-output rect {
+.railroad-diagram-output rect {
   fill: #b0cbed;
   stroke-width: 1;
   stroke: #0e2336
 }
 
-#railroad-diagram-output .start-end {
+.railroad-diagram-output .start-end {
   fill: #0e2336
 }
 
-#railroad-diagram-output .terminal rect {
+.railroad-diagram-output .terminal rect {
   fill: #d0e2f3
 }
 
-#railroad-diagram-output .terminal text {
+.railroad-diagram-output .terminal text {
   font-weight: 700
 }
