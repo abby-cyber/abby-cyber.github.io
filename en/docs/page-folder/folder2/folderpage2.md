@@ -1,7 +1,7 @@
 
 # title
 
-<link rel="stylesheet" href="../../stylesheets/railroad-diagram.css">
+<link rel="stylesheet" href="../../../stylesheets/railroad-diagram.css">
 
 ## subtitle 1
 
