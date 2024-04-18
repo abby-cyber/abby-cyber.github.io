@@ -6,7 +6,7 @@ hide:
 
 # Page 
 
-<link rel="stylesheet" href="./stylesheets/railroad-diagram.css">
+<link rel="stylesheet" href="../stylesheets/railroad-diagram.css">
 
 ## Syntax
 
