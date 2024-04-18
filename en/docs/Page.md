@@ -22,7 +22,7 @@ hide:
 
 === "diagram"
 
-    <div id="railroad-diagram-output">
+    <div class="railroad-diagram-output">
 
   <dt>AlterDatabaseStmt</dt><dd><svg class="railroad-diagram" width="474" height="35" viewBox="0 0 474 35">
   <g transform="translate(.5 .5)">

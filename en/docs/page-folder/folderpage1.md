@@ -11,4 +11,4 @@ DatabaseOption ::=
     DefaultKwdOpt ( CharsetKw '='? CharsetName | 'COLLATE' '='? CollationName | 'ENCRYPTION' '='? EncryptionOpt )    
 ```
 
-<div id="railroad-diagram-output"></div>
+<div class="railroad-diagram-output"></div>
