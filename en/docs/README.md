@@ -104,4 +104,4 @@ TableNameList ::=
     TableName ( ',' TableName )*
 ```
 
-<div id="railroad-diagram-output"></div>
+<div class="railroad-diagram-output"></div>

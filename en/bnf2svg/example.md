@@ -15,8 +15,8 @@ symbol ::= '.' | '?'
 
 **Output:**
 
-<!-- 重点2·一定要用 <div id="railroad-diagram-output"> 包装 SVG 元素，你也可以在 css 中修改成其他 id -->
-<div id="railroad-diagram-output">
+<!-- 重点2·一定要用 <div class="railroad-diagram-output"> 包装 SVG 元素，你也可以在 css 中修改成其他 id -->
+<div class="railroad-diagram-output">
 
   <!-- 重点3·这里是通过 render.js 生成的 BNF 到 SVG 的输出代码 -->
   <dt>S</dt><dd><svg class="railroad-diagram" width="195" height="26" viewBox="0 0 195 26">

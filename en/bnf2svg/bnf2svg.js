@@ -31,7 +31,7 @@ function processDirectory(directory) {
       }
 
       // 将 SVG 插入到指定位置
-      content = content.replace('<div id="railroad-diagram-output"></div>', `<div id="railroad-diagram-output">\n${svgContent}\n</div>`);
+      content = content.replace('<div class="railroad-diagram-output"></div>', `<div class="railroad-diagram-output">\n${svgContent}\n</div>`);
       console.log(`Inserted SVG into file: ${filePath}`);
 
       // 写回文件
