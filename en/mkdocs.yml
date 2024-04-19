@@ -44,6 +44,15 @@ theme:
       primary: blue-grey
       accent: lime
 
+plugins:
+  - with-pdf:
+      cover_subtitle: test     
+      cover: true
+      back_cover: true
+      copyright: Copyright &copy; Abby.huang -  All rights reserved.
+      # cover_logo: 'https://cloud-cdn.nebula-graph.com.cn/nebula-for-pdf.png'
+      output_path: pdf/abby.pdf
+
 markdown_extensions:
   - codehilite
   - admonition
@@ -90,3 +99,5 @@ nav:
         - folderpage2: page-folder/folder2/folderpage2.md
       - folderpage1: page-folder/folderpage1.md
   - "External Link": https://www.baidu.com
+
+  - PDF: ./pdf/abby.pdf
