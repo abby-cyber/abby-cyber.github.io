@@ -30,9 +30,22 @@ function processDirectory(directory) {
         svgContent += '\n' + indentedSvg + '\n';
       }
 
+      // 创建样式字符串
+      const style = `
+      <style>
+        .railroad-diagram-output dt:first-child { margin-top: 0 }
+        .railroad-diagram-output dt:after { font-weight: 400; content: " ::=" }
+        .railroad-diagram-output dd { margin: 0 0 16px; padding: 0 16px; overflow-x: auto; overflow-y: hidden}
+        .railroad-diagram-output path { fill: none; stroke-width: 1; stroke: #0e2336 }
+        .railroad-diagram-output text { font: 10px Verdana, sans-serif; text-anchor: middle }
+        .railroad-diagram-output rect { fill: #b0cbed; stroke-width: 1; stroke: #0e2336 }
+        .railroad-diagram-output .start-end { fill: #0e2336 }
+        .railroad-diagram-output .terminal rect { fill: #d0e2f3 }
+        .railroad-diagram-output .terminal text { font-weight: 700 }
+      </style>`;
 
       // 将 SVG 和样式插入到指定位置
-      const replacement = `<div class="railroad-diagram-output">${ svgContent }</div>`.replace(/\n/g, ''); // 压缩成一行
+      const replacement = `<div class="railroad-diagram-output">${svgContent}</div>${style}`.replace(/\n/g, ''); // 压缩成一行
       content = content.replace('<!-- svg_placeholder -->', replacement);
       console.log(`Inserted SVG into file: ${filePath}`);
 
