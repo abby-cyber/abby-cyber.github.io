@@ -52,6 +52,12 @@ plugins:
       copyright: Copyright &copy; Abby.huang -  All rights reserved.
       # cover_logo: 'https://cloud-cdn.nebula-graph.com.cn/nebula-for-pdf.png'
       output_path: pdf/abby.pdf
+  - swagger-ui-tag:
+      background: "#f7f7f7"
+      docExpansion: "list"
+      filter: true
+      syntaxHighlightTheme: "obsidian"
+      tryItOutEnabled: true
 
 markdown_extensions:
   - codehilite
@@ -98,6 +104,7 @@ nav:
       - folder2:
         - folderpage2: page-folder/folder2/folderpage2.md
       - folderpage1: page-folder/folderpage1.md
+  - OpenAPI: OpenAPI.md
   - "External Link": https://www.baidu.com
   - "AI Search": http://192.168.8.129:8182/ui/chat/6ce2fa107e6930cd
   - PDF: ./pdf/abby.pdf
