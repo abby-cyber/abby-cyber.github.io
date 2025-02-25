@@ -16,3 +16,4 @@ mkdocs-minify-plugin
 Markdown==3.3.7
 pyyaml
 mkdocs-glightbox
+mkdocs-swagger-ui-tag
