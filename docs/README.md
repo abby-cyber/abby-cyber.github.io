@@ -1,3 +1,8 @@
+---
+template: home.html
+title: Home
+---
+
 # HOMEPAGE
 
 Click on a tile to change the primary color:
