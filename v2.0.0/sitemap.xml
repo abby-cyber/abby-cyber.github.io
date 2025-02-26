@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://abby-cyber.github.io/v2.0.0/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://abby-cyber.github.io/docs/v2.0.0/</loc>
+         <lastmod>2025-02-26</lastmod>
     </url>
     <url>
-         <loc>https://abby-cyber.github.io/v2.0.0/Page/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://abby-cyber.github.io/docs/v2.0.0/Page/</loc>
+         <lastmod>2025-02-26</lastmod>
     </url>
     <url>
-         <loc>https://abby-cyber.github.io/v2.0.0/page-folder/folderpage1/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://abby-cyber.github.io/docs/v2.0.0/page-folder/folderpage1/</loc>
+         <lastmod>2025-02-26</lastmod>
     </url>
     <url>
-         <loc>https://abby-cyber.github.io/v2.0.0/page-folder/folder2/folderpage2/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://abby-cyber.github.io/docs/v2.0.0/page-folder/folder2/folderpage2/</loc>
+         <lastmod>2025-02-26</lastmod>
     </url>
 </urlset>

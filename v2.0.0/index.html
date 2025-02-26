@@ -1,3 +1,5 @@
+<!-- Elements added to "home.html" will only be displayed on the home page -->
+
 <!-- 自定义导航栏的warning标语 -->
 
 <!doctype html>
@@ -9,7 +11,7 @@
       
       
       
-        <link rel="canonical" href="https://abby-cyber.github.io/v2.0.0/">
+        <link rel="canonical" href="https://abby-cyber.github.io/docs/v2.0.0/">
       
       
       
@@ -17,11 +19,11 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.4.6">
     
     
       
-        <title>Abby's Doc Site Name</title>
+        <title>Home - Abby's Doc Site Name</title>
       
     
     
@@ -150,7 +152,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -209,6 +211,7 @@
     <div class="md-container" data-md-component="container">
       
       
+
         
           
             
@@ -302,6 +305,298 @@
           
         
       
+
+
+<!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
+<!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
+<style>
+
+    .md-main {
+        flex-grow: 0
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .tx-container {
+        padding-top: .0rem;
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(0deg,47%,55%,1) 99%,#fff 99%)
+    }
+
+    .tx-hero {
+        margin: 32px 2.8rem;
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700
+    }
+
+    .tx-hero__content {
+        padding-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    .tx-hero__image{
+        width:17rem;
+        height:17rem;
+        order:1;
+        padding-right: 2.5rem;
+    }
+
+    .tx-hero .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button--primary {
+        background-color: var(--md-primary-bg-color);
+        color: hsla(280deg, 37%, 48%, 1);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        background-color: var(--md-accent-fg-color);
+        color: var(--md-default-bg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+
+    .feature-item h2 svg {
+        height: 30px;
+        float: left;
+        margin-right: 10px;
+        transform: translateY(10%);
+    }
+
+    .top-hr {
+        margin-top: 42px;
+    }
+
+    .feature-item {
+	border-radius: 20px;
+	margin-top: .5rem;
+        margin-right: .5rem;
+	background-color: var(--md-primary-bg-color);
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 0 15px;
+        word-break: break-word
+    }
+
+    .feature-item h2 {
+        color: #333;
+        font-weight: 300;
+        font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: inherit;
+    }
+
+    .feature-item p {
+        font-size: 16px;
+        line-height: 1.8em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: #111;
+        margin: 0 0 10px;
+        display: block;
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 22rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+
+        .top-hr {
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .bottom-hr {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .feature-item:hover {
+            background-color: #526cfe47;
+            border-radius: 3px;
+        }
+    }
+
+    .hr {
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text-center {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15px;
+        font-family: 'Lato', sans-serif;
+        font-size: 23px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+
+    .logos img {
+        flex: 1 1 auto;
+        padding: 25px;
+        max-height: 130px;
+        vertical-align: middle;
+    }
+
+    .hr-logos {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .md-footer-meta__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1.0rem;
+    }
+
+    .md-footer-social {
+        padding-top: 20px;
+    }
+</style>
+
+
+<!-- Main site entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+      
+        <!-- Custom Image -->
+        <div class="tx-hero__image">
+	  <img src="images/Planetary-02150x.png" draggable="false">
+        </div>
+	
+	<!-- Main Tagline -->
+        <div class="tx-hero__content">
+          <h1>Abby's Doc Site</h1>
+          <p>This site is an example showcase for abby's documentation site.
+</p>
+	  
+	  <!-- Added Buttons (up to 3) --><a href="https://abby-cyber.github.io/master/" title="Material | MkDocs" class="md-button md-button--primary">
+            Docs
+          </a><a href="Page" title="Material | MkDocs" class="md-button">
+            Clicky2
+          </a></div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Main site box descriptions -->
+<div class="top-hr">
+
+    <!-- Start Outer Condition --><div class="feature-item">
+        <h2>
+	    <!-- People Icon --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" />
+            </svg><!-- Gear Icon --><!-- Image Icon --><!-- Button Description -->
+            Docs
+        </h2>
+        <p>This joker navigates to the shadow wizard armory located in "/Folder1/index.md"
+</p>
+    </div><!-- End Outer Condition -->
+    
+    <!-- Start Outer Condition --><div class="feature-item">
+        <h2>
+	    <!-- People Icon --><!-- Gear Icon --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M15 17v-3h3v-2l4 3.5-4 3.5v-2h-3m2 1v3h-3v2l-4-3.5 4-3.5v2h3M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m9.66-5.27l-2-3.46c-.12-.22-.38-.31-.61-.22l-2.49 1c-.51-.41-1.06-.74-1.69-1l-.37-2.63A.506.506 0 0014 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.26-1.17.59-1.69 1L5 5.05c-.23-.09-.5 0-.61.22l-2 3.46c-.13.21-.08.49.11.64L4.57 11l-.07 1 .07 1-2.11 1.63c-.2.15-.25.43-.12.64l2 3.46c.11.27.4.38.66.27l2.5-1c.24.19.5.37.76.53l1.65-1.4c-.77-.33-1.45-.82-2-1.45l-2.41 1-.77-1.3L6.8 13.8a5.55 5.55 0 010-3.6L4.69 8.65l.75-1.3 2.41 1c.78-.9 1.83-1.53 3-1.78l.4-2.57h1.5l.37 2.62c1.17.24 2.22.88 3 1.77l2.41-1 .75 1.3-2.08 1.51c.09.26.16.53.2.8h2l2.1-1.63a.48.48 0 00.16-.64M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m0-6c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2z" />
+            </svg><!-- Image Icon --><!-- Button Description -->
+	    Clicky2
+        </h2>
+        <p>This goober navigates to some important thingies located in "/Folder2/index.md"
+</p>
+    </div><!-- End Outer Condition -->
+    
+    <!-- Start Outer Condition --><!-- End Outer Condition -->
+</div>
+
+<div class="top-hr">
+    <div class="hr">
+    </div>
+</div>
+
+
+<!-- Toggleable JavaScript execution --><script>
+document$.subscribe(function() {
+  console.log("'home_execute_js' is enabled:");
+  console.log("This is an example!");
+
+}).unsubscribe();
+</script>
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -544,95 +839,6 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-                  
-
-
-<h1 id="homepage">HOMEPAGE</h1>
-<p>Click on a tile to change the primary color:</p>
-<!-- 下面的代码用于改变主题颜色 -->
-
-<div class="mdx-switch">
-  <button data-md-color-primary="red"><code>red</code></button>
-  <button data-md-color-primary="pink"><code>pink</code></button>
-  <button data-md-color-primary="purple"><code>purple</code></button>
-  <button data-md-color-primary="deep-purple"><code>deep purple</code></button>
-  <button data-md-color-primary="indigo"><code>indigo</code></button>
-  <button data-md-color-primary="blue"><code>blue</code></button>
-  <button data-md-color-primary="light-blue"><code>light blue</code></button>
-  <button data-md-color-primary="cyan"><code>cyan</code></button>
-  <button data-md-color-primary="teal"><code>teal</code></button>
-  <button data-md-color-primary="green"><code>green</code></button>
-  <button data-md-color-primary="light-green"><code>light green</code></button>
-  <button data-md-color-primary="lime"><code>lime</code></button>
-  <button data-md-color-primary="yellow"><code>yellow</code></button>
-  <button data-md-color-primary="amber"><code>amber</code></button>
-  <button data-md-color-primary="orange"><code>orange</code></button>
-  <button data-md-color-primary="deep-orange"><code>deep orange</code></button>
-  <button data-md-color-primary="brown"><code>brown</code></button>
-  <button data-md-color-primary="grey"><code>grey</code></button>
-  <button data-md-color-primary="blue-grey"><code>blue grey</code></button>
-  <button data-md-color-primary="black"><code>black</code></button>
-  <button data-md-color-primary="white"><code>white</code></button>
-</div>
-
-<script>
-  var colorMap = {
-    "red": {background: "#F44336", text: "#FFFFFF"},
-    "pink": {background: "#FFC0CB", text: "#FFFFFF"},
-    "purple": {background: "#9C27B0", text: "#FFFFFF"},
-    "deep-purple": {background: "#673AB7", text: "#FFFFFF"},
-    "indigo": {background: "#3F51B5", text: "#FFFFFF"},
-    "blue": {background: "#2196F3", text: "#FFFFFF"},
-    "light-blue": {background: "#03A9F4", text: "#FFFFFF"},
-    "cyan": {background: "#00BCD4", text: "#FFFFFF"},
-    "teal": {background: "#009688", text: "#FFFFFF"},
-    "green": {background: "#4CAF50", text: "#FFFFFF"},
-    "light-green": {background: "#8BC34A", text: "#FFFFFF"},
-    "lime": {background: "#CDDC39", text: "#000000"},
-    "yellow": {background: "#FFEB3B", text: "#000000"},
-    "amber": {background: "#FFC107", text: "#000000"},
-    "orange": {background: "#FF9800", text: "#000000"},
-    "deep-orange": {background: "#FF5722", text: "#FFFFFF"},
-    "brown": {background: "#795548", text: "#FFFFFF"},
-    "grey": {background: "#9E9E9F", text: "#FFFFFF"},
-    "blue-grey": {background: "#607D8B", text: "#FFFFFF"},
-    "black": {background: "#000000", text: "#FFFFFF"},
-    "white": {background: "#FFFFE", text: "#000000"},
-    // 你可以在这里添加更多颜色
-  };
-
-  var buttons = document.querySelectorAll("button[data-md-color-primary]")
-  buttons.forEach(function(button) {
-    var color = button.getAttribute("data-md-color-primary");
-    // 如果颜色在 colorMap 中，使用 colorMap 中的值
-    var backgroundColor = colorMap[color] ? colorMap[color].background : color;
-    var textColor = colorMap[color] ? colorMap[color].text : "#000000";
-    var codeElement = button.querySelector("code");
-    codeElement.style.backgroundColor = backgroundColor;
-    codeElement.style.color = textColor;
-
-    button.addEventListener("click", function() {
-      document.body.setAttribute("data-md-color-primary", color)
-      var name = document.querySelector("#__code_1 code span.l")
-      name.textContent = color.replace("-", " ")
-
-      buttons.forEach(function(btn) {
-        var codeElement = btn.querySelector("code");
-        codeElement.style.backgroundColor = "initial";
-        codeElement.style.color = "initial";
-      });
-
-      codeElement.style.backgroundColor = backgroundColor;
-      codeElement.style.color = textColor;
-    })
-  })
-</script>
-
-
-
-
-
-                
               </article>
             </div>
           
@@ -648,63 +854,6 @@
 </button>
         
       </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      &copy; 2023 <a href="https://github.com/james-willett" target="_blank" rel="noopener">James Willett</a>
-
-    </div>
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-        <div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://github.com/squidfunk" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://twitter.com/squidfunk" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-    <a href="" target="_blank" rel="noopener" title="" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
       
     </div>
     <div class="md-dialog" data-md-component="dialog">
